@@ -1,0 +1,39 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Progress Compile/Syntax Check'
+      'command': 'dsl-progress:code_compile'
+    },
+    {
+      'label': 'Progress Run'
+      'command': 'dsl-progress:code_run'
+    }
+    ,
+    {
+      'label': 'Data Dict (_edit.r)'
+      'command': 'dsl-progress:run_edit'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'DSL-Progress'
+      'submenu': [
+        {
+          'label': 'Compile/Syntax Check'
+          'command': 'dsl-progress:code_run'
+        },
+        {
+          'label': 'Run'
+          'command': 'dsl-progress:code_run'
+        },
+        {
+          'label': 'Data Dictionary'
+          'command': 'dsl-progress:run_edit'
+        }
+      ]
+    ]
+  }
+]

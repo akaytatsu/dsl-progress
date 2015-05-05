@@ -1,0 +1,4 @@
+".source.abl":
+  editor:
+    commentStart: "/* "
+    commentEnd: " */"

@@ -1,0 +1,112 @@
+'.source.abl':
+  #variaveis
+  'def var as char init "" no-undo':
+    'prefix': 'dchar'
+    'body': 'def var ${1:name} as char init "" no-undo.\n'
+  'def var as int init "" no-undo':
+    'prefix': 'dint'
+    'body': 'def var ${1:name} as int init 0 no-undo.\n'
+  'def var as date no-undo':
+    'prefix': 'ddate'
+    'body': 'def var ${1:name} as date no-undo.\n'
+  'def var as logical init yes no-undo':
+    'prefix': 'dlog'
+    'body': 'def var ${1:name} as logical init yes no-undo.\n'
+  'def var as decimal init yes no-undo':
+    'prefix': 'ddec'
+    'body': 'def var ${1:name} as dec init 0 no-undo.\n'
+  #buffers
+  'def buffer for':
+    'prefix': 'dbuffer'
+    'body': 'def buffer ${1:table} for ${2:table}.\n'
+  #params
+  'def input param as char no-undo':
+    'prefix': 'ichar'
+    'body': 'def input param ${1:name} as char no-undo.\n'
+  'def input param as int no-undo':
+    'prefix': 'iint'
+    'body': 'def input param ${1:name} as int no-undo.\n'
+  'def input param as date no-undo':
+    'prefix': 'idate'
+    'body': 'def input param ${1:name} as date no-undo.\n'
+  'def input param as logical no-undo':
+    'prefix': 'ilog'
+    'body': 'def input param ${1:name} as logical no-undo.\n'
+  'def input param as dec no-undo':
+    'prefix': 'idec'
+    'body': 'def input param ${1:name} as dec no-undo.\n'
+  'def output param as char no-undo':
+    'prefix': 'ochar'
+    'body': 'def output param ${1:name} as char no-undo.\n'
+  'def output param as int no-undo':
+    'prefix': 'oint'
+    'body': 'def output param ${1:name} as int no-undo.\n'
+  'def output param as date no-undo':
+    'prefix': 'odate'
+    'body': 'def output param ${1:name} as date no-undo.\n'
+  'def output param as logical no-undo':
+    'prefix': 'olog'
+    'body': 'def output param ${1:name} as logical no-undo.\n'
+  'def output param as dec no-undo':
+    'prefix': 'odec'
+    'body': 'def output param ${1:name} as dec no-undo.\n'
+  #querys
+  'find first':
+    'prefix': 'ff',
+    'body': 'find first ${1:table} where ${2:data} no-error.'
+  'find last':
+    'prefix': 'fl',
+    'body': 'find last ${1:table} where ${2:data} no-error.'
+  'for each':
+    'prefix': 'fore',
+    'body': 'for each ${1:table} where ${2:data}:\n\t\nend.'
+  'for first':
+    'prefix': 'forf',
+    'body': 'for first ${1:table} where ${2:data}:\n\t\nend.'
+  'for last':
+    'prefix': 'forl',
+    'body': 'for last ${1:table} where ${2:data}:\n\t\nend.'
+  #process
+  'assign var = var.':
+    'prefix': '!a',
+    'body': 'assign ${1:var}        = ${2:value}\n       .'
+  'if':
+    'prefix': 'if',
+    'body': 'if ${1:condition} then do:\n\nend.'
+  'else':
+    'prefix': 'else',
+    'body': 'else do:\n\nend.'
+  'run':
+    'prefix': 'r',
+    'body': 'run ${1:name}.'
+  #procedure
+  'procedure':
+    'prefix': 'procedure',
+    'body': 'procedure ${1:name}:\n\t\nend procedure.'
+  'function':
+    'prefix': 'function',
+    'body': 'function ${1:name} returns ${2:type} (${3:params}):\n\t\nend function.'
+  #comments
+  'header':
+    'prefix': '!h'
+    'body': '/********************************************************\n
+             *\n
+             * Autor.....: ${1:autor}          \n
+             *                                 \n
+             * Programa..: ${2:program }       \n
+             *                                 \n
+             * Data......: ${3:date   }        \n
+             *                                 \n
+             * Descrição.: ${4:description}    \n
+             *                                 \n
+             *********************************************************/\n\n'
+  'comment':
+    'prefix': '!'
+    'body': '/* ${1:comment} */'
+  #alerts
+  'message':
+    'prefix': 'me'
+    'body': 'message ${1:string}\n        view-as alert-box.'
+  'disp 1':
+    'prefix': 'disp'
+    'body': 'display ${1:string}\n        with 1 col width 400.\npause.\n'
