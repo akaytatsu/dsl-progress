@@ -24,11 +24,6 @@
     "atom-space-pen-views": "^2.0.3",
     "xregexp": "^2.0.0"
   },
-  "readme": "# dsl-progress package\n\n###\"nenhum software é uma ilha\" (Google inc)  \n\n>Adiciona suporte a desenvolvimento 4GL OpenEdge ao ATOM.  \nEsse projeto visa uma robusta e dinâmica produtividade para os desenvolvedores Progress.  \n\n## Instalação\n\nVocê pode instalar pelo painel de configuração\n\n## Features\n\n* Snippets para agilidade na codificação\n* Checagem de sintaxe\n* Compilar programas\n* Comentários\n* Arvore de acesso aos programas\n",
-  "readmeFilename": "README.md",
-  "bugs": {
-    "url": "https://github.com/akaytatsu/dsl-progress/issues"
-  },
   "homepage": "https://github.com/akaytatsu/dsl-progress",
   "_atomModuleCache": {
     "version": 1,
