@@ -1,7 +1,7 @@
 {
   "name": "dsl-progress",
   "main": "./lib/dsl-progress",
-  "version": "0.15.0",
+  "version": "0.16.0",
   "description": "A package for develop with 4GL Progress",
   "activationEvents": [
     "dsl-progress:code_run",
@@ -13,6 +13,5 @@
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
