@@ -53,22 +53,22 @@
   #querys
   'find first':
     'prefix': 'ff',
-    'body': 'find first ${1:table} where ${2:data} no-error.'
+    'body': 'find first ${1:table} no-error.'
   'find last':
     'prefix': 'fl',
-    'body': 'find last ${1:table} where ${2:data} no-error.'
+    'body': 'find last ${1:table} no-error.'
   'for each':
     'prefix': 'fore',
-    'body': 'for each ${1:table} where ${2:data}:\n\t\nend.'
+    'body': 'for each ${1:table}:\n\t\nend.'
   'for first':
     'prefix': 'forf',
-    'body': 'for first ${1:table} where ${2:data}:\n\t\nend.'
+    'body': 'for first ${1:table}:\n\t\nend.'
   'for last':
     'prefix': 'forl',
-    'body': 'for last ${1:table} where ${2:data}:\n\t\nend.'
+    'body': 'for last ${1:table}:\n\t\nend.'
   #process
   'assign var = var.':
-    'prefix': '!a',
+    'prefix': 'assign',
     'body': 'assign ${1:var}        = ${2:value}\n       .'
   'if':
     'prefix': 'if',
@@ -77,7 +77,7 @@
     'prefix': 'else',
     'body': 'else do:\n\nend.'
   'run':
-    'prefix': 'r',
+    'prefix': 'run',
     'body': 'run ${1:name}.'
   #procedure
   'procedure':
@@ -101,7 +101,7 @@
              *                                 \n
              *********************************************************/\n\n'
   'comment':
-    'prefix': '!'
+    'prefix': '/'
     'body': '/* ${1:comment} */'
   #alerts
   'message':
