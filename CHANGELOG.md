@@ -1,5 +1,8 @@
-## 0.22.0 - Implementations
+## 0.23.0 - Implementations
 * Add more Snippets
+
+## 0.22.0 - Bug Version Fix
+* Bug Version Fix
 
 ## 0.21.0 - Implementations | Bug Fix
 * Bug Fix
