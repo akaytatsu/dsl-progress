@@ -58,7 +58,7 @@
     'prefix': 'fl',
     'body': 'find last ${1:table} no-error.'
   'for each':
-    'prefix': 'fore',
+    'prefix': 'for',
     'body': 'for each ${1:table}:\n\t\nend.'
   'for first':
     'prefix': 'forf',
@@ -66,6 +66,31 @@
   'for last':
     'prefix': 'forl',
     'body': 'for last ${1:table}:\n\t\nend.'
+  #temp-tables
+  'temp-table':
+    'prefix': 'tt'
+    'body': 'def temp-table ${1:nome}\n\t\t\t\t field ${2:campo} ${3:var_like}\n\t\t\t\t .'
+  'field character':
+    'prefix': 'fchar'
+    'body': 'field ${1:nome} as char init ""'
+  'field integer':
+    'prefix': 'fint'
+    'body': 'field ${1:nome} as int init 0'
+  'field decimal':
+    'prefix': 'fdec'
+    'body': 'field ${1:nome} as dec init 0'
+  'field logical':
+    'prefix': 'flog'
+    'body': 'field ${1:nome} as logical init yes'
+  'field date':
+    'prefix': 'fdate'
+    'body': 'field ${1:nome} as date'
+  'field rowid':
+    'prefix': 'frow'
+    'body': 'field ${1:nome} as rowid'
+  'field like':
+    'prefix': 'flike'
+    'body': 'field ${1:nome} like ${2:campo}'
   #process
   'assign var = var.':
     'prefix': 'assign',
@@ -79,6 +104,13 @@
   'run':
     'prefix': 'run',
     'body': 'run ${1:name}.'
+  #precodes
+  'output to value':
+    'prefix': '!output',
+    'body': 'output to value(${1:path}).\n\t\noutput close.'
+  'input from value':
+    'prefix': '!input',
+    'body': 'input from value(${1:path}).\n\t\ninput close.'
   #procedure
   'procedure':
     'prefix': 'procedure',
