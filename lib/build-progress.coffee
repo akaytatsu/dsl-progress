@@ -55,6 +55,7 @@ class BuildProgress
         )
       else
         buildView.append("checking syntax... ")
+        console.log(command_comp)
         exec( command_comp, (error, stdout, stderr) ->
           buildManager.getFile tempFol, (arrErro, fullMsg)->
             if arrErro.length > 0
@@ -75,6 +76,7 @@ class BuildProgress
               if params['exec'] == true
 
                 buildView.append("compiling...")
+                console.log(command_comp)
                 exec(command_comp, (error, stdout, stderr) ->
 
                   buildView.append("running...")

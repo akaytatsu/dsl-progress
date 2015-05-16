@@ -37,7 +37,7 @@ class BuildManager
             col: /Col:([0-9]+)/i.exec( d )[1],
             error: /Error:([0-9]+)\s/i.exec( d )[1],
             row: /Row:([0-9]+)\s/i.exec( d )[1],
-            msg: /Message:(.+)[:|.]/i.exec( d )[1]
+            msg: /Message:(.+)[:|.|(]/i.exec( d )[1]
           }
           @addErro(arrData)
     @callback( @dslErrArray, data )

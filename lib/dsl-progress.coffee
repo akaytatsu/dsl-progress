@@ -13,6 +13,13 @@ module.exports =  DlsProgress =
 
   #Menu Config
   config:
+    someSetting:
+      type: 'object'
+      properties:
+        myChildIntOption:
+          type: 'integer'
+          minimum: 1.5
+          maximum: 11.5
     iniPath:
       type: 'string'
       default: ''
