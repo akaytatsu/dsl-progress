@@ -51,7 +51,7 @@ class BuildProgress
         buildView.append("data dictionary...")
         exec(command_edit, (error, stdout, stderr) ->
           buildView.buildFinished("Success!", true)
-          atom.workspaceView.getActiveView().focus()
+          atom.views.getView(atom.workspace.getActiveTextEditor()).focus();
         )
       else
         buildView.append("checking syntax... ")
@@ -87,7 +87,7 @@ class BuildProgress
               else
                 buildView.buildFinished("Success!", true)
 
-            atom.workspaceView.getActiveView().focus()
+            atom.views.getView(atom.workspace.getActiveTextEditor()).focus();
           ###
           if stdout.substring(0, 5) == "ERROR"
             buildView.append("-------------------------------------")

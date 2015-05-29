@@ -1,3 +1,6 @@
+## 0.26.0 - PreRelease
+* Add support API 1.0
+
 ## 0.23.0 - Implementations
 * Add more Snippets
 
